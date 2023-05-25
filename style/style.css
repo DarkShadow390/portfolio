@@ -189,7 +189,7 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-section {
+#coffre {
     display: flex;
     justify-content: center;
     margin-top: 100px;
@@ -202,7 +202,7 @@ section {
     height: 800px;
     width: 800px;
     background-color: rgb(150, 150, 150);
-    ;
+    z-index: -1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -366,19 +366,22 @@ section {
     left: 190px;
 
 }
-#manette6{
+
+#manette6 {
     background-color: bisque;
     transform: rotate(310deg);
     top: -50px;
     right: 198px;
 }
-#manette7{
+
+#manette7 {
     background-color: bisque;
     transform: rotate(227deg);
     top: 149px;
     left: -20px;
 }
-#manette8{
+
+#manette8 {
     background-color: bisque;
     transform: rotate(137deg);
     top: 153px;
@@ -406,4 +409,44 @@ section {
     100% {
         transform: rotate(360deg)
     }
+}
+
+
+
+
+
+#tout {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 2fr 3fr;
+}
+
+#code {
+
+    height: 400px;
+    width: 400px;
+    padding: 50px;
+    background-color: rgb(150, 150, 150);
+    border: solid;
+    border-radius: 30px;
+    display: grid;
+    flex-direction: column;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+#digiCode {
+    display: flex;
+    justify-content: center;
+}
+
+#code input {
+    grid-column: 1 / span 3;
+    font-size: xxx-large;
+
+}
+
+#touche0 {
+    grid-column: 1 / span 3;
 }
