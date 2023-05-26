@@ -193,6 +193,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
     margin-top: 100px;
+    margin-bottom: 100px;
 
 }
 
@@ -202,7 +203,6 @@ body::-webkit-scrollbar-thumb {
     height: 800px;
     width: 800px;
     background-color: rgb(150, 150, 150);
-    z-index: -1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -416,9 +416,13 @@ body::-webkit-scrollbar-thumb {
 
 
 #tout {
+    background-image: url("https://www.constructionlabrique.com/wp-content/uploads/2018/09/pierre-ou-brique-avantages-de-la-brique.jpeg");
+    background-size: cover;
     display: grid;
     align-items: center;
+    justify-content: center;
     grid-template-columns: 2fr 3fr;
+    margin-top: 50px;
 }
 
 #code {
