@@ -431,7 +431,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 30px;
     display: grid;
     flex-direction: column;
-    gap: 10px;
     grid-template-columns: repeat(3, 1fr);
 
 }
@@ -444,6 +443,7 @@ body::-webkit-scrollbar-thumb {
 #code input {
     grid-column: 1 / span 3;
     font-size: xxx-large;
+    text-align: center;
 
 }
 
