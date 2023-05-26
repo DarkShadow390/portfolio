@@ -1,9 +1,12 @@
-let code = document.getElementById("motDePasse");
+let motDePasse = document.getElementById("motDePasse");
 let codeButton = document.querySelectorAll("button");
+
+let code = motDePasse.value;
+const newNode = document.createTextNode("Wate");
 
 codeButton[0].addEventListener("click", function () {
     // ajoute le chiffre 1 dans le code
-    alert(1);
+    alert("1");
 });
 codeButton[1].addEventListener("click", function () {
     // ajoute le chiffre 2 dans le code 
@@ -43,8 +46,30 @@ codeButton[9].addEventListener("click", function () {
 });
 
 
+codeButton[10].addEventListener("click", function () {
+    //effacer la value du motDePasse au click
+    alert("affacer");
 
-if (code == "1234") {
-    //ajoute une animation au "circle7"
-};
+});
+codeButton[11].addEventListener("click", function () {
+    //ajoute une animation au "circle7" si le motDePasse est exact
+
+    if (motDePasse.value == "1234") {
+        document.getElementById("circle2").classList.add("animation");
+
+
+        alert("bravo vous avez trouvez le code");
+
+    }
+    if (motDePasse.value == "0000") {
+        document.getElementById("circle7").classList.remove("animation");
+
+
+    }
+    else {
+        alert("mot de passe incorret");
+    }
+
+});
+
 
