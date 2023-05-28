@@ -11,87 +11,63 @@ body {
     height: 500vh;
 }
 
-
+/*SCROLLBAR*/
 body::-webkit-scrollbar {
     width: 15px;
 }
-
 body::-webkit-scrollbar-track {
     background-color: rgb(47, 47, 200);
 }
-
 body::-webkit-scrollbar-thumb {
     background-color: rgb(84, 84, 160);
     border-radius: 10px;
 }
 
-.generale {
 
-    position: absolute;
-    z-index: -1;
-}
-
+/*NAVBAR*/
 #navBar {
-
-
     padding: 10px;
     background-color: rgb(84, 84, 160);
     border: solid rgb(5, 5, 181) 5px;
-    /* position: fixed;
-    top: 0; */
     width: 100%;
     box-sizing: border-box;
     display: flex;
     justify-content: space-around;
     align-items: center;
     position: fixed;
+    z-index: 999;
     top: 0;
-
-
-
-
-
 }
 
 #navBar a {
-
     color: white;
     font-size: 1.25rem;
-
-
 }
-
-
 #connexion {
     background-color: black;
     padding: 0.625rem;
     border-radius: 1.88rem;
     color: white;
-
 }
-
 #connexion:hover {
     background-color: rgb(135, 135, 122);
-
-
 }
-
 #inscription {
     background-color: white;
     padding: 0.625rem;
     border-radius: 1.88rem;
     color: black !important;
-
 }
-
 #inscription:hover {
     background-color: rgb(135, 102, 102);
-
 }
 
 
-
+/*RADAR*/
 .radar {
+    position: absolute;
+}
+.radarCircle1 {
     height: 250px;
     width: 250px;
     background-color: black;
@@ -102,10 +78,8 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
-
-.radar2 {
+.radarCircle2 {
     height: 200px;
     width: 200px;
     background-color: black;
@@ -114,12 +88,8 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
-
 }
-
-.radar3 {
+.radarCircle3 {
     height: 150px;
     width: 150px;
     background-color: black;
@@ -129,12 +99,8 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
-
 }
-
-.radar4 {
+.radarCircle4 {
     height: 100px;
     width: 100px;
     background-color: black;
@@ -143,22 +109,17 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     justify-content: center;
     border: green solid;
-
-
 }
-
-.radar5 {
+.radarCircle5 {
     height: 50px;
     width: 50px;
     background-color: black;
     border-radius: 50%;
     border: green solid;
-
 }
-
-.triangle {
+.radarScan {
     position: absolute;
-    width: 125px;
+    width: 240px;
     height: 0px;
     border-top: 125px solid transparent;
     border-right: 125px solid #00800094;
@@ -166,7 +127,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 50%;
     animation: leRadar 2s linear infinite;
 }
-
 @keyframes leRadar {
     0% {
         transform: rotate(0deg)
@@ -189,6 +149,21 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+/*COFFRE FORT*/
+
+#tout {
+    background-image: url("https://www.constructionlabrique.com/wp-content/uploads/2018/09/pierre-ou-brique-avantages-de-la-brique.jpeg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+
+}
+
+
 #coffre {
     display: flex;
     justify-content: center;
@@ -197,8 +172,6 @@ body::-webkit-scrollbar-thumb {
 
 
 }
-
-
 #circle1 {
     /*1*/
     height: 800px;
@@ -209,26 +182,19 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     border-radius: 50%;
     border: solid;
-    
-
-
 }
-
 #circle2 {
     /*2*/
     height: 700px;
     width: 700px;
     background-color: rgb(150, 150, 150);
-
     display: flex;
     align-items: center;
     justify-content: center;
     border: solid;
     box-shadow: -5.5px 3.5px 5px 16px black;
     border-radius: 50%;
-
 }
-
 #circle3 {
     /*3*/
     height: 680px;
@@ -241,10 +207,7 @@ body::-webkit-scrollbar-thumb {
     border: solid;
     box-shadow: none;
     border-radius: 50%;
-    
-
 }
-
 #circle4 {
     /*4*/
     height: 500px;
@@ -257,41 +220,31 @@ body::-webkit-scrollbar-thumb {
     border: solid;
     box-shadow: none;
     border-radius: 50%;
-   
-
 }
-
 #circle5 {
     /*5*/
     height: 480px;
     width: 480px;
     background-color: rgb(150, 150, 150);
-    ;
     display: flex;
     align-items: center;
     justify-content: center;
     border: solid;
     box-shadow: none;
     border-radius: 50%;
-    
-
 }
-
 #circle6 {
     /*6*/
     height: 300px;
     width: 300px;
     background-color: rgb(150, 150, 150);
-    
     display: flex;
     align-items: center;
     justify-content: center;
     border: solid;
     box-shadow: none;
     border-radius: 50%;
-
 }
-
 #circle7 {
     /*7*/
     height: 200px;
@@ -304,24 +257,19 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 1.5px 20px 8.5px black;
     border-radius: 50%;
     position: relative;
- 
 }
-
 #circle8 {
     /*8*/
     height: 180px;
     width: 180px;
     background-color: rgb(150, 150, 150);
-   
     display: flex;
     align-items: center;
     justify-content: center;
     border: solid;
     box-shadow: none;
     border-radius: 50%;
-
 }
-
 #circle9 {
     /*9*/
     height: 90px;
@@ -330,9 +278,8 @@ body::-webkit-scrollbar-thumb {
     border: solid;
     box-shadow: none;
     border-radius: 50%;
-    
-    
 }
+
 
 .manette {
     height: 100px;
@@ -342,71 +289,42 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     top: -100px;
     border-bottom: solid;
-    
-
-    
-
 }
-
-
 #manette2 {
-    background-color: bisque;
     transform: rotate(90deg);
     top: 50px;
     left: 234px;
-
 }
-
 #manette3 {
     transform: rotate(270deg);
-    background-color: bisque;
     top: 50px;
     right: 234px;
-
-
-
 }
-
 #manette4 {
     transform: rotate(180deg);
-    background-color: bisque;
     top: 194px;
     right: 90px;
-
-
 }
-
 #manette5 {
-    background-color: bisque;
     transform: rotate(45deg);
     top: -57px;
     left: 190px;
-
 }
-
 #manette6 {
-    background-color: bisque;
     transform: rotate(310deg);
     top: -50px;
     right: 198px;
 }
-
 #manette7 {
-    background-color: bisque;
     transform: rotate(227deg);
     top: 149px;
     left: -20px;
 }
-
 #manette8 {
-    background-color: bisque;
     transform: rotate(137deg);
     top: 153px;
     right: -14px;
-    
 }
-
-
 @keyframes manette {
     0% {
         transform: rotate(0deg)
@@ -430,44 +348,28 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-#tout {
-    background-image: url("https://www.constructionlabrique.com/wp-content/uploads/2018/09/pierre-ou-brique-avantages-de-la-brique.jpeg");
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    
-    
-
-}
-
-#code {
-
-    height: 400px;
-    width: 400px;
-    padding: 50px;
-    background-color: rgb(150, 150, 150);
-    border: solid;
-    border-radius: 30px;
-    display: grid;
-    flex-direction: column;
-    grid-template-columns: repeat(3, 1fr);
-    
-    
-    
-
-}
+/*DIGICODE*/
 
 #digiCode {
     margin-right: 50px;
 }
 
-#code input {
-    grid-column: 1 / span 3;
-    font-size: xxx-large;
-    text-align: center;
+#buttonGrid {
+    height: 400px;
+    width: 400px;
+    padding: 50px;
+    border-radius: 30px;
+    background-color: rgb(150, 150, 150);
+    border: solid;
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: repeat(3, 1fr);
+}
 
+#ecran {
+    grid-column: 1 / span 3;
+    text-align: center;
+    font-size: xxx-large;
 }
 
 
@@ -479,6 +381,5 @@ body::-webkit-scrollbar-thumb {
 #touche0 {
     grid-column: 2;
     grid-row: 5;
-    
-}
 
+}

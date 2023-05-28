@@ -1,75 +1,62 @@
-let motDePasse = document.getElementById("motDePasse");
+let ecran = document.getElementById("ecran");
 let codeButton = document.querySelectorAll("button");
 
-let code = motDePasse.value;
-const newNode = document.createTextNode("Wate");
 
 codeButton[0].addEventListener("click", function () {
     // ajoute le chiffre 1 dans le code
-    alert("1");
+    ecran.value += 1;
 });
 codeButton[1].addEventListener("click", function () {
-    // ajoute le chiffre 2 dans le code 
-    alert("2");
+    // ajoute le chiffre 2 dans le code
+    ecran.value += 2;
 });
 codeButton[2].addEventListener("click", function () {
     // ajoute le chiffre 3 dans le code 
-    alert("3");
+    ecran.value += 3;
 });
 codeButton[3].addEventListener("click", function () {
     // ajoute le chiffre 4 dans le code 
-    alert("4");
+    ecran.value += 4;
 });
 codeButton[4].addEventListener("click", function () {
     // ajoute le chiffre 5 dans le code 
-    alert("5");
+    ecran.value += 5;
 });
 codeButton[5].addEventListener("click", function () {
     // ajoute le chiffre 6 dans le code 
-    alert("6");
+    ecran.value += 6;
 });
 codeButton[6].addEventListener("click", function () {
     // ajoute le chiffre 7 dans le code 
-    alert("7");
+    ecran.value += 7;
 });
 codeButton[7].addEventListener("click", function () {
     // ajoute le chiffre 8 dans le code 
-    alert("8");
+    ecran.value += 8;
 });
 codeButton[8].addEventListener("click", function () {
     // ajoute le chiffre 9 dans le code 
-    alert("9");
+    ecran.value += 9;
 });
 codeButton[9].addEventListener("click", function () {
     // ajoute le chiffre 0 dans le code 
-    alert("0");
+    ecran.value += 0;
 });
-
-
 codeButton[10].addEventListener("click", function () {
     //effacer la value du motDePasse au click
-    alert("affacer");
-
+    ecran.value = "";
 });
 codeButton[11].addEventListener("click", function () {
     //ajoute une animation au "circle7" si le motDePasse est exact
 
-    if (motDePasse.value == "1234") {
-        document.getElementById("circle2").classList.add("animation");
-
-
+    if (ecran.value == "1234") {
+        document.getElementById("circle7").classList.add("animation");
         alert("bravo vous avez trouvez le code");
-
     }
-    if (motDePasse.value == "0000") {
+    if (ecran.value == "0000") {
         document.getElementById("circle7").classList.remove("animation");
-
-
     }
     else {
         alert("mot de passe incorret");
     }
-
 });
-
-
