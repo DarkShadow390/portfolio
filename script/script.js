@@ -1,6 +1,12 @@
 let ecran = document.getElementById("ecran");
 let codeButton = document.querySelectorAll("button");
 
+ecran.addEventListener("input", function(){
+    if(ecran.value.length > ecran.maxLength) ecran.value = ecran.value.slice(0, ecran.maxLength)
+    
+});
+
+
 
 codeButton[0].addEventListener("click", function () {
     // ajoute le chiffre 1 dans le code
@@ -46,20 +52,45 @@ codeButton[10].addEventListener("click", function () {
     //effacer la value du motDePasse au click
     ecran.value = "";
 });
-codeButton[11].addEventListener("click", function () {
-    //ajoute une animation au "circle7" si le motDePasse est exact
-
+codeButton[11].addEventListener("click", function valider() {
+    //ajoute une animation au "circle7" si le motDePasse est exact 
+    if(ecran.value.length > ecran.maxLength){
+        alert("Le nombre maximum de caractères autorisés 4.");
+    }
+    if(ecran.value.length < ecran.maxLength){
+        alert("Le nombre minimun de caractères requis  4.");
+    }
     if (ecran.value == "1234") {
         document.getElementById("circle7").classList.add("animation");
         document.getElementById("circle2").classList.add("animation2");
         alert("bravo vous avez trouvez le code");
     }
+    if (ecran.value == "1111") {
+        document.getElementById("tout").classList.add("tout2");
+    }
     if (ecran.value == "0000") {
         document.getElementById("circle7").classList.remove("animation");
         document.getElementById("circle2").classList.remove("animation2");
     }
+    if (ecran.value == "00e+") {
+        ecran.type = "number";
+    }
+    if (ecran.value == "1999") {
+        ecran.type = "password";
+    }
+    if (ecran.value == "azer") {
+        document.getElementById("tout").style.display ="none";
+        document.querySelector("body").style.backgroundColor ="#0064ff87";
+        
+    }
     else {
-        alert("mot de passe incorret");
+        alert("mot de passe invalide");
     }
 });
 
+// document.body.addEventListener("keypress", function(e){
+//     if(e.key == "Enter"){
+//         valider();
+//         console.log(valider());
+//     }
+// });

@@ -157,12 +157,11 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     justify-content: center;
-
-
-
-
 }
 
+.tout2{
+    background-image: url("https://thumbs.dreamstime.com/b/mur-de-forteresse-l-%C3%A2ge-moyen-avec-motif-briques-et-pierres-en-allemagne-closeup-d%C3%A9tails-158088236.jpg") !important;
+}
 
 #coffre {
     display: flex;
