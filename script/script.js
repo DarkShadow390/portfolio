@@ -51,12 +51,15 @@ codeButton[11].addEventListener("click", function () {
 
     if (ecran.value == "1234") {
         document.getElementById("circle7").classList.add("animation");
+        document.getElementById("circle2").classList.add("animation2");
         alert("bravo vous avez trouvez le code");
     }
     if (ecran.value == "0000") {
         document.getElementById("circle7").classList.remove("animation");
+        document.getElementById("circle2").classList.remove("animation2");
     }
     else {
         alert("mot de passe incorret");
     }
 });
+
