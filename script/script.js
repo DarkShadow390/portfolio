@@ -52,7 +52,8 @@ codeButton[10].addEventListener("click", function () {
     //effacer la value du motDePasse au click
     ecran.value = "";
 });
-codeButton[11].addEventListener("click", function valider() {
+
+function valider() {
     //ajoute une animation au "circle7" si le motDePasse est exact 
     if(ecran.value.length > ecran.maxLength){
         alert("Le nombre maximum de caractères autorisés 4.");
@@ -86,11 +87,13 @@ codeButton[11].addEventListener("click", function valider() {
     else {
         alert("mot de passe invalide");
     }
-});
+}
 
-// document.body.addEventListener("keypress", function(e){
-//     if(e.key == "Enter"){
-//         valider();
-//         console.log(valider());
-//     }
-// });
+codeButton[11].addEventListener("click", valider);
+
+document.body.addEventListener("keypress", function(e){
+    if(e.key == "Enter"){
+        valider();
+        console.log("valider");
+    }
+});
